@@ -59,3 +59,9 @@ function update_like(message_id){
     like:updated_likes
   });
 }
+
+function logout(){
+  localStorage.removeItem("user=");
+  localStorage.removeItem("name- ");
+  window.location="index.html";
+}
